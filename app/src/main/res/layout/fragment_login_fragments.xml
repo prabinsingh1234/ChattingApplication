@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragments.LoginFragments"
+>
+
+<!-- TODO: Update blank fragment layout -->
+<EditText
+    android:padding="10sp"
+    android:id="@+id/et_login_username"
+    android:hint="@string/enter_phonenumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+<EditText
+    android:padding="10sp"
+    android:id="@+id/et_login_password"
+    android:hint="@string/enter_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    />
+
+<Button
+    android:id="@+id/btn_login_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundbutton"
+    android:padding="10sp"
+    android:text="@string/login_fragment" />
+
+
+<TextView
+    android:fontFamily="sans-serif-condensed-light"
+    android:layout_marginTop="20dp"
+    android:textSize="22sp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:text="@string/create_account"
+    android:id="@+id/tv_login_signup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/yellow"
+    android:text="@string/forget_change_password"
+    android:fontFamily="sans-serif-condensed-light"
+    android:layout_marginTop="20dp"
+    android:textSize="22sp"
+    android:textColorLink="@color/white"
+    />
+
+<TextView
+    android:id="@+id/et_help"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/yellow"
+    android:text="@string/need_help"
+    android:fontFamily="sans-serif-condensed-light"
+    android:layout_marginTop="20dp"
+    android:textSize="22sp"
+    android:textColorLink="@color/yellow"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay"
+        android:id="@+id/btn_mPay"/>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".activity.UserDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_margin="7dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"
+        android:text="@string/user_name"
+        android:paddingStart="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:id="@+id/user_detail_name"
+        android:textSize="20sp"
+        android:hint="@string/please_refresh_for_name"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:text="@string/contact_number"
+            android:paddingLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:id="@+id/user_detail_number"
+            android:textSize="20sp" />
+
+        <Button
+            android:gravity="right"
+            android:id="@+id/call"
+            android:text="@string/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:text="@string/purpose"
+            android:paddingLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/purpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:id="@+id/user_detail_purpose"
+        android:textSize="20sp" />
+
+        <TextView
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:text="Opening Line"
+            android:paddingLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Opening Line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:id="@+id/user_detail_openingline"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

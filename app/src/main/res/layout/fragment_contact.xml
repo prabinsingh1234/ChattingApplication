@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+        <TextView
+            android:id="@+id/help"
+            android:layout_gravity="end"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="13dp"
+            android:drawableLeft="@drawable/help"
+            android:gravity="center"
+            android:textColor="#4f4f4f"
+            android:text="Need Help"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="94dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:text="Your Contacts"
+        android:textSize="28sp"
+        android:textColor="#2e2d3d"
+        android:lineSpacingExtra="2sp"
+        android:textStyle="bold"
+        />
+    <!--    <ListView-->
+    <!--        android:id="@+id/list"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:divider="@null"-->
+    <!--        android:dividerHeight="0dp"-->
+    <!--        />-->
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/search_background"
+        android:layout_marginTop="153dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+
+        >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/icons_action_search"
+            />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:hint="@string/enter_contact_information"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:background="#00000000"/>
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatb1"
+        android:src="@drawable/floatingbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:maxImageSize="56dp"
+        app:fabSize="normal"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frag_contact_recyclerview"
+        android:layout_marginTop="241dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

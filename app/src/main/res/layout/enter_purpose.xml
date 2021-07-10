@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_gravity="start"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/help"
+            android:layout_gravity="end"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="13dp"
+            android:drawableLeft="@drawable/help"
+            android:gravity="center"
+            android:textColor="#4f4f4f"
+            android:text="Need Help"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:text="Enter purpose"
+        android:textSize="28sp"
+        android:textColor="#2e2d3d"
+        android:lineSpacingExtra="2sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#2e2d3d"
+            android:textStyle="bold"
+            android:text="Enter purpose of call"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selectcontact_background"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Type purpose"
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:background="#00000000"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/next"
+            style="?android:attr/buttonStyleSmall"
+            android:background="@drawable/roundbutton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Make call" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="#8491a3"></View>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        />
+</LinearLayout>
+</ScrollView>

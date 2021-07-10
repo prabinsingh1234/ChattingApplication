@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10sp"
+    android:paddingRight="20sp"
+    android:paddingLeft="20sp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FF000000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#2e2d3d"
+            android:lineSpacingExtra="7sp"
+            android:id="@+id/tv_rwcontactinfo_etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/_9810213"
+            android:id="@+id/tv_rwcontactinfo_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10sp"
+            android:paddingBottom="10sp">
+
+            <ImageButton
+
+                android:id="@+id/btn_rwcontactinfo_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
